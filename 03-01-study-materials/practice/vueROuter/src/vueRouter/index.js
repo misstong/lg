@@ -90,5 +90,8 @@ export default class VueRouter{
         window.addEventListener('popstate',()=>{
             this.data.current = window.location.pathname
         })
+        window.addEventListener('hashchange',()=>{
+            this.data.current = window.location.hash
+        })
     }
 }
