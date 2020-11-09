@@ -1,0 +1,17 @@
+{
+  "name": "blog-with-gridsome",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@gridsome/source-strapi": "^0.2.0",
+    "bootstrap": "^4.5.3",
+    "element-ui": "^2.14.0",
+    "gridsome": "^0.7.0",
+    "mavon-editor": "^2.9.0"
+  }
+}
