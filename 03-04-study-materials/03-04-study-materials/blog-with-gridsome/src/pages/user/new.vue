@@ -8,7 +8,7 @@
         <div>
           {{$page.news.edges[0].node.description}}
         </div>
-        <div v-html="$markdown($page.news.edges[0].node.content)"></div>
+        <div v-html="$page.news.edges[0].node.content"></div>
       </el-card>
       <el-card shadow='never' v-if="!$page.news">
         <b>没有更新 ╮(๑•́ ₃•̀๑)╭</b>
@@ -18,7 +18,12 @@
 
 <script>
 export default {
-
+  name: 'new',
+  methods: {
+    markdownIt(content){
+      return this.$markdown(content)
+    }
+  }
 }
 </script>
 <page-query>

@@ -18,7 +18,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.use(mavonEditor)
 
   Vue.prototype.$markdown = function (value) {
-      return mavonEditor.markdownIt.render(value)
-  }
+    return mavonEditor.markdownIt.render(value)
+}
   Vue.component('Layout', DefaultLayout)
 }

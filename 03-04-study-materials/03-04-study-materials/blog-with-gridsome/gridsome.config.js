@@ -6,6 +6,8 @@
 
 module.exports = {
   siteName: 'Gridsome',
+  pathPrefix: '/blog',
+  siteUrl: 'https://misstong.github.io',
   plugins: [
     {
       use: '@gridsome/source-strapi',
